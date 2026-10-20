@@ -2,10 +2,10 @@ import asyncio
 from aiogram import Bot, Dispatcher, types
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-# 👇 Inverted commas ke andar apna BotFather se mila token dalein
-BOT_TOKEN = "YAHAN_APNA_BOT_TOKEN_DALEIN"
+# Token ke sath quotes (" ") theek kar diye gaye hain
+BOT_TOKEN = "8934221471:AAG8281dIoB5_mI1F0LDvnbDZUs-KgwTEXM"
 
-bot = Bot(8934221471:AAG828ldIoB5_mI1F0LDvnbDZUs-KgwTEXM)
+bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher()
 
 # Jab user channel par join request bhejega
@@ -24,7 +24,7 @@ async def send_instructions_on_request(event: types.ChatJoinRequest):
         "👇 **Niche button par click karke shuru karein:**"
     )
 
-    # 2. Buttons taiyar karein
+    # 2. Buttons
     keyboard = InlineKeyboardMarkup(
         inline_keyboard=[
             [
@@ -37,7 +37,7 @@ async def send_instructions_on_request(event: types.ChatJoinRequest):
     )
 
     try:
-        # Photo, caption aur buttons ke sath DM bhejna
+        # Photo, caption aur buttons bhejna
         photo_url = "https://picsum.photos/800/400"
         await bot.send_photo(
             chat_id=user_id,
