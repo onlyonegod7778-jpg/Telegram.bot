@@ -3,9 +3,9 @@ from aiogram import Bot, Dispatcher, types
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 # Token ke sath quotes (" ") theek kar diye gaye hain
-BOT_TOKEN = "8934221471:AAG8281dIoB5_mI1F0LDvnbDZUs-KgwTEXM"
+BOT_TOKEN = "8934221471:AAG828ldIoB5_mI1F0LDvnbDZUs-KgwTEXM"
 
-bot = Bot(token=BOT_TOKEN)
+bot = Bot(8934221471:AAG828ldIoB5_mI1F0LDvnbDZUs-KgwTEXM)
 dp = Dispatcher()
 
 # Jab user channel par join request bhejega
